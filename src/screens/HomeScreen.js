@@ -1,13 +1,22 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View } from "react-native";
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>Welcome to the Home Screen!</Text>
+  const greeting = <Text style={styles.greet}>Welcome to the Home Screen!</Text>; 
+  const yourName = 'Kristy'
+  return <View>
+      {greeting}
+      <Text style={styles.text}>Welcome back {yourName}!</Text>
+      
+  </View>
 };
 
 const styles = StyleSheet.create({
+  greet: {
+    fontSize: 40,
+  },
   text: {
-    fontSize: 30,
+    fontSize: 20,
   },
 });
 
