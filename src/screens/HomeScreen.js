@@ -13,7 +13,7 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create({
   greet: {
-    fontSize: 40,
+    fontSize: 45,
   },
   text: {
     fontSize: 20,
