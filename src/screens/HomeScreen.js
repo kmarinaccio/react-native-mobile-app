@@ -12,6 +12,7 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.text}>Your Yard is currently empty.</Text>
       <Button onPress={() => navigation.navigate('List')} title="Establish Your Yard" />
       <Button onPress={() => navigation.navigate('WeatherAlerts')} title="Weather Alerts" />
+      <Button onPress={() => navigation.navigate('Images')} title="Image Screen" />
   </View>
 };
 
