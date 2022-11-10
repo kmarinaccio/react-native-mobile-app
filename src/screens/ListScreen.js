@@ -29,12 +29,12 @@ const ListScreen = () => {
         { name: '12a', fTemp: '50 to 55', cTemp: '10 to 12.8'},
         { name: '12b', fTemp: '55 to 60', cTemp: '12.8 to 15.6'},
         { name: '13a', fTemp: '60 to 65', cTemp: '15.6 to 18.3'},
-        { name: '13b', fTemp: '65 to 70', cTemp: '18.3 to 21.1'},
+        { name: '13b', fTemp: '65 to 70', cTemp: '18.3 to 21.1'}
     ];
 
     return (<View><Text style={styles.textStyle}>Select USDA Hardiness Region:</Text>
-            <FlatList data={usdaZones} renderItem={({item}) => {
-                return <Text style={styles.listStyle}>{item.name}</Text>;
+            <FlatList keyExtractor={usdaZones => usdaZones.name} data={usdaZones} renderItem={({item}) => {
+                return <Text style={styles.listStyle}>{item.name + " - " + item.fTemp + "˚F"}</Text>;
                 }} 
             />
             </View>
@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
         fontSize: 25
     },
     listStyle: {
-        fontSize: 18
+        fontSize: 18,
+        marginVertical: 15
     }
 });
 
