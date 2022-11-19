@@ -17,9 +17,6 @@ const ImageScreen = () => {
 const styles = StyleSheet.create({
     textStyle: {
         fontSize: 45
-    },
-    subHeaderStyle: {
-        fontSize: 20
     }
 });
 

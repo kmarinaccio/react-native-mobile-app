@@ -14,6 +14,7 @@ const HomeScreen = ({ navigation }) => {
       <Button onPress={() => navigation.navigate('WeatherAlerts')} title="Weather Alerts" />
       <Button onPress={() => navigation.navigate('Images')} title="Image Screen" />
       <Button onPress={() => navigation.navigate('Box')} title="Box Screen" />
+      <Button onPress={() => navigation.navigate('Color')} title="Color Screen" />
   </View>
 };
 
